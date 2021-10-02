@@ -10,13 +10,13 @@ export default class Character {
     this.defence;
   }
 
-  static checkName(name) {
+  checkName(name) {
     if (name.length < 2 || name.length > 10) {
       throw new Error(`Name ${name} is invalid.`);
     }
   }
 
-  static checkType(type) {
+  checkType(type) {
     const types = [
       'Bowman',
       'Swordsman',
